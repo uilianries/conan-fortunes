@@ -1,6 +1,6 @@
 # Fortune Mod Conan
 
-Fortunes for Conan tips and hints
+Fortune Mod for Conan tips and hints
 
 ```
  ________________________________________________
