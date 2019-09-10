@@ -1,0 +1,15 @@
+Keep updated
+You can update your Conan version by pip install -U conan
+https://docs.conan.io/en/latest/installation.html#update
+%
+What is new
+All releases are documented in Conan changelog
+https://docs.conan.io/en/latest/changelog.html
+%
+Prefer Python 3
+Python 2 is only fully supported until Conan 1.6
+https://docs.conan.io/en/latest/installation.html#python-2-deprecation-notice
+%
+Use conanfile.py for consumers
+You can use a conanfile.py for installing/consuming packages instead of conanfile.txt only
+https://docs.conan.io/en/latest/mastering/conanfile_py.html#use-conanfile-py-for-consumers
