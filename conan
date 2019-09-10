@@ -13,3 +13,212 @@ https://docs.conan.io/en/latest/installation.html#python-2-deprecation-notice
 Use conanfile.py for consumers
 You can use a conanfile.py for installing/consuming packages instead of conanfile.txt only
 https://docs.conan.io/en/latest/mastering/conanfile_py.html#use-conanfile-py-for-consumers
+%
+Conditional settings, options and requirements
+Your conanfile.py you also have access to the options of your dependencies
+https://docs.conan.io/en/latest/mastering/conditional.html#conditional-settings-options-and-requirements
+%
+Constrain settings and options
+How to deal when libraries are not compatible with specific settings or options
+https://docs.conan.io/en/latest/mastering/conditional.html#constrain-settings-and-options
+%
+Build policies
+Your dependencies are not available as pre-built packages? Try --build missing
+https://docs.conan.io/en/latest/mastering/policies.html#build-policies
+%
+Build policies
+Do you prefer building all dependencies from sources? Try --build and take a coffee
+https://docs.conan.io/en/latest/mastering/policies.html#build-policies
+%
+Build policies
+Do you want to build only outdated packages from recipes? Try --build outdated
+https://docs.conan.io/en/latest/mastering/policies.html#build-policies
+%
+Environment variables
+Do you need custom env vars when installing a package? Try conan install -e
+https://docs.conan.io/en/latest/mastering/envvars.html#defining-environment-variables
+%
+Issues
+Ops, Conan looks broken! Please, report an issue to Conan project
+https://github.com/conan-io/conan/issues
+%
+Wishlist
+I need a new recipe, but it's not available yet. Open a new request.
+https://github.com/conan-io/wishlist
+%
+Documentation
+Looking for complete Conan docs?
+https://github.com/conan-io/docs
+%
+Blog
+Looking for news about Conan and C/C++?
+https://blog.conan.io/
+%
+Docker
+Do you need Docker images for packages building or C/C++ development?
+https://github.com/conan-io/conan-docker-tools
+%
+Hooks
+Do you need to customize Conan client? Try Conan Hooks
+https://docs.conan.io/en/latest/extending/hooks.html
+%
+CMake Conan
+How to launch conan install from cmake
+https://docs.conan.io/en/latest/howtos/cmake_launch.html
+%
+How to package header-only libraries
+Packaging a header only library can be done with a very simple recipe
+https://docs.conan.io/en/latest/howtos/header_only.html
+%
+IDE integration
+Do you want to run Conan from your IDE? Look the available plugins
+https://docs.conan.io/en/latest/integrations/ides.html
+%
+CI integration
+You can use CI platforms to build and generate your Conan packages
+https://docs.conan.io/en/latest/integrations/ci.html
+%
+Sharing the settings and other configuration
+How could I share my personal profile? conan config command is the answer
+https://docs.conan.io/en/latest/mastering/sharing_settings_and_config.html
+%
+Conan local cache
+If you don't want to use the default Conan home folder
+https://docs.conan.io/en/latest/mastering/custom_cache.html
+%
+Concurrency
+Conan supports concurrency, allowing simultaneous creation or installation of different packages
+https://docs.conan.io/en/latest/mastering/custom_cache.html#concurrency
+%
+Inspecting Packages
+Print the conanfile.py from a remote package:
+    conan get zlib/1.2.8@conan/stable -r conan-center
+https://docs.conan.io/en/latest/creating_packages/inspecting_packages.html
+%
+Package Creator Tools
+Easy generation of multiple Conan packages with different configurations
+https://docs.conan.io/en/latest/creating_packages/package_tools.html
+%
+Developing packages in development flow
+When conan create is not enough for your build steps
+https://docs.conan.io/en/latest/developing_packages/package_dev_flow.html
+%
+Developing packages in editable mode
+To avoid creating a package in the cache for every change
+https://docs.conan.io/en/latest/developing_packages/editable_packages.html
+%
+Developing packages with Workspaces
+When you need to work simultaneously on more than one package
+https://docs.conan.io/en/latest/developing_packages/workspaces.html
+%
+Getting graph of your dependencies in HTML format
+    conan info boost/1.71.0@conan/stable --graph=file.html
+https://docs.conan.io/en/latest/reference/commands/consumer/info.html
+%
+Creating a symbolic for a Conan package
+    conan alias Hello/0.X@user/testing Hello/0.1@user/testing
+https://docs.conan.io/en/latest/reference/commands/misc/alias.html
+%
+Inspecting the recipe's license
+    conan inspect zlib/1.2.11@conan/stable -a=license
+https://docs.conan.io/en/latest/reference/commands/misc/inspect.html
+%
+How to manage the GCC >= 5 ABI
+If you need to adjust your default libcxx for GCC
+https://docs.conan.io/en/latest/howtos/manage_gcc_abi.html
+%
+How to reuse Python code in recipes
+When a recipe can be used as base for many others
+https://docs.conan.io/en/latest/howtos/python_code_reuse.html
+%
+Conan Tools - Get
+Download a zipped file, validate the checksum and inflate
+https://docs.conan.io/en/latest/reference/tools.html#tools-get
+%
+Conan Tools - Version
+How to compare compiler and recipe versions
+https://docs.conan.io/en/latest/reference/tools.html#tools-version
+%
+Conan Tools - Git
+Wrapper of the git tool
+https://docs.conan.io/en/latest/reference/tools.html#tools-git
+%
+Conan Tools - SVN
+Wrapper of the svn tool
+https://docs.conan.io/en/latest/reference/tools.html#tools-svn
+%
+Conan Tools - Collect libs
+Returns a sorted list of library names from the libraries located inside the conanfile.cpp_info.libdirs
+https://docs.conan.io/en/latest/reference/tools.html#tools-collect-libs
+%
+Conan Tools - Which
+Returns the path to a specified executable searching in the PATH
+https://docs.conan.io/en/latest/reference/tools.html#tools-which
+%
+Conan Tools - Load
+Utility function to load files in one line
+https://docs.conan.io/en/latest/reference/tools.html#tools-load
+%
+Conan Tools - run_in_windows_bash
+Runs a UNIX command inside a bash shell. Useful to build libraries using configure and make in Windows
+https://docs.conan.io/en/latest/reference/tools.html#tools-run-in-windows-bash
+%
+Conan Tools - cross_building
+Reading the settings and the current host machine to validate if is cross building
+https://docs.conan.io/en/latest/reference/tools.html#tools-cross-building
+%
+Conan System requirements
+If you need to install system-wide packages from Conan
+https://docs.conan.io/en/latest/reference/conanfile/methods.html#method-system-requirements
+%
+Conan Tools - chdir
+A context manager that allows to temporary change the current directory in your conanfile
+https://docs.conan.io/en/latest/reference/tools.html#tools-chdir
+%
+Conan Tools - environment_append
+A context manager that allows to temporary use environment variables
+https://docs.conan.io/en/latest/reference/tools.html#tools-environment-append
+%
+Conan Tools - Patch
+Applies a patch from a file or from a string into the given pat
+https://docs.conan.io/en/latest/reference/tools.html#tools-patch
+%
+Conan Tools - Replace in file
+Simple “patch” or modification of source files. Replace a pattern in a file
+https://docs.conan.io/en/latest/reference/tools.html#tools-replace-in-file
+%
+Conan Tools - CPU count
+Returns the number of CPUs available
+https://docs.conan.io/en/latest/reference/tools.html#tools-cpu-count
+%
+Package revisions
+When a recipe changes and it's used to create a package, a new recipe revision is generated
+https://docs.conan.io/en/latest/versioning/introduction.html#package-revisions
+%
+Dependencies overriding
+When the same package is required with different versions
+https://docs.conan.io/en/latest/versioning/introduction.html#dependencies-overriding
+%
+Conan Center
+The main official repository for open source Conan packages
+https://docs.conan.io/en/latest/uploading_packages/remotes.html#conan-center
+%
+Bincrafters
+The Bincrafters team builds binary software packages for the OSS community
+https://bintray.com/bincrafters/public-conan
+%
+Contributing Packages to Conan-center
+Contributions are done via pull requests to the Github repository
+https://docs.conan.io/en/latest/uploading_packages/bintray/conan_center_guide.html
+%
+Artifactory Community Edition for C/C++
+The recommended server for development and hosting private packages for a team or company
+https://docs.conan.io/en/latest/uploading_packages/artifactory_ce.html
+%
+How to manage shared libraries provided by Conan
+Conan can deal with shared libraries, which are loaded at runtime
+https://docs.conan.io/en/latest/howtos/manage_shared_libraries.html#how-to-manage-shared-libraries
+%
+Starting a new Conan project from the scratch
+    conan new mypackage/1.0
+https://docs.conan.io/en/latest/reference/commands/creator/new.html

@@ -13,4 +13,4 @@ do
   sudo cp $it.dat /usr/share/games/fortunes
 done
 
-echo "fortune $fortunes" >> ~/.bashrc
+echo "fortune /usr/share/games/fortunes/$fortunes" >> ~/.bashrc
